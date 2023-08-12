@@ -1,0 +1,719 @@
+/* Barra de navegacion */
+.navbar {
+    padding: 2rem;
+    background-color: #D7DBDD;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+  
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;  
+}
+
+.logo{
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link{
+    color: black;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.items{
+    margin-left: 25px;
+}
+
+.registro{
+    font-size: 25px;
+    margin-left: 100px;
+    font-weight: bold;
+}
+
+.sesion {
+    display: inline-block; 
+    background-color: black;
+    font-weight: bold; 
+    color: whitesmoke;
+    margin-left: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.navbar:hover {
+    background-color: #2980B9;
+    color: whitesmoke;
+}
+
+.navbar:hover  .logo{
+    color: whitesmoke;
+}
+
+.navbar:hover .nav-link {
+    color: whitesmoke;
+}
+
+.navbar:hover .sesion {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.navbar .nosotros:hover {
+    color: #82E0AA;
+}
+
+.navbar .vision:hover {
+    color: #EC97EF;
+}
+
+.navbar .material:hover {
+    color: #EDBB99;
+}
+
+.navbar .contacto:hover {
+    color: #F3F881;
+}
+
+.navbar .registro:hover {
+    color: #27AE60;
+}
+
+.navbar .sesion:hover {
+    color: #A569BD;
+}
+
+/* Seccion Hero */
+
+section{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+.hero {
+    background-color: #F2F3F4;
+    color: black;
+    min-height: 450px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-principal{
+    padding: 3rem;
+}
+
+.container p {
+    font-size: 2rem;
+    padding: 0.5rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.container p span.typed-text {
+    font-weight: normal;
+    color: #707B7C;
+}
+
+.container p span.cursor {
+    display: inline-block;
+    background-color: black;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+
+.container p span.cursor.typing {
+    animation: none;
+}
+
+@keyframes blink {
+    0% {
+        background-color: black;
+    }
+
+    49% {
+        background-color: black;
+    }
+}
+
+/* Seccion Nosotros */
+
+.seccion-nosotros {
+    background-color: black;
+    color: white;
+    padding-bottom: 0rem;
+}
+
+.seccion-nosotros h1 {
+    font-size: 5rem; 
+    padding-top: 4rem;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+}
+
+.seccion-nosotros h2 {
+    font-size: 3.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+}
+
+.seccion-nosotros h1:hover {
+    font-size: 5.2rem;
+    color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #A569BD;
+}
+
+.seccion-nosotros h2:hover {
+    font-size: 3.7rem;
+    color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #1ABC9C;
+}
+
+.cards {
+    place-items: center center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    padding: 20px;
+    grid-gap: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+
+.card {
+    background-color: black;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+}
+
+.card:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+}
+
+.contenedor {
+    position: relative;
+    clip-path: polygon(0 0,100% 0,100% 85%, 0 100%);
+}
+
+.cards img {
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+
+.contenedor::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.7;
+}
+
+.card1>.contenedor::after {
+    background-image: linear-gradient(135deg, #0100ec, #fb36f4);
+}
+
+.card2>.contenedor::after {
+    background-image: linear-gradient(135deg, #2bdce3, #42ffdb);
+}
+
+.card3>.contenedor::after {
+    background-image: linear-gradient(135deg, #ffab1d, #f8501c);
+}
+
+.card4>.contenedor::after {
+    background-image: linear-gradient(135deg, #7FB3D5, #2471A3);
+}
+
+/* Seccion Vision */
+.seccion-vision {
+    background-color: white;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-vision h1 {
+    padding-top: 7rem;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.seccion-vision h2 {
+    padding-bottom: 5rem;
+}
+
+.crd {
+    background-color: white;
+    transition: all 0.5s ease-in;
+    border-radius: 10px;
+}
+
+.crd img {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.crd h3 {
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.crd p {
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.crd:hover p {
+    color: black;
+    font-weight: bold;
+    transition: all 0.5s ease-in;
+}
+
+.crd1:hover {
+    background-color: #A9CCE3;
+    transition: all 0.5s ease-in;
+}
+
+.crd2:hover {
+    background-color: #F9E79F;
+    transition: all 0.5s ease-in;
+}
+
+.crd3:hover {
+    background-color: #A2D9CE;
+    transition: all 0.5s ease-in;
+}
+
+.crd4:hover {
+    background-color: #DF8FC8;
+    transition: all 0.5s ease-in;
+}
+
+
+/* Seccion Materias */
+
+.seccion-materias {
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    margin-bottom: 10rem;
+    margin-top: -5rem;
+}
+
+.seccion-materias h1 {
+    position: relative;
+    font-weight: bold;
+    font-size: 5rem;
+    overflow: hidden;
+}
+
+.seccion-materias h1::before {
+    content: "";
+    position: absolute;
+    left: 120%;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(98deg, transparent 0%, white 5%, white 100%);
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        left: -20%;
+    }
+
+    50% {
+        left: 120%;
+    }
+
+    100% {
+        left: -20%;
+    }
+}
+
+.seccion-materias h2 {
+    font-weight: 500;
+}
+
+.proyectos-recientes{
+    padding: 40px;
+}
+
+.proyectos-recientes img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.proyectos-contenedor{
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+.overlay{
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.proyecto{
+    position: relative;
+}
+
+.proyecto img {
+    border-radius: 10px;
+}
+
+.proyecto:hover img{
+    opacity: 0.2;
+}
+
+.proyecto:hover .overlay{
+    opacity: 1;
+
+}
+
+.overlay i{
+    color: black;
+    font-size: 2.5rem;
+    margin: 10px;
+}
+
+
+/* Footer */
+
+body .footer {
+    z-index: 1;
+    --footer-background: black;
+    display: grid;
+    position: relative;
+    grid-area: footer;
+    height: 30rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+  body .footer .bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1rem;
+    background: var(--footer-background);
+    filter: url("#blob");
+  }
+  body .footer .bubbles .bubble {
+    position: absolute;
+    left: var(--position, 50%);
+    background: var(--footer-background);
+    border-radius: 100%;
+    -webkit-animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+            animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+    transform: translate(-50%, 100%);
+  }
+  body .footer .content {
+    z-index: 2;
+    padding: 2rem;
+    background: var(--footer-background);
+}
+
+body .footer .content p {
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+body .footer .content .sub-footer {
+    font-size: 1.1rem;
+    color: #B2BABB;
+}
+
+body .footer .content .contact {
+    text-align: center;
+}
+
+body .footer .content i {
+    color: white;
+    font-size: 4.5rem;
+}
+
+body .footer .content .contact .creadores {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+
+body .footer .content .contact .creadores .alejandro {
+    flex: 0 0 50%; /* Ocupar el 50% del ancho del contenedor */
+    color: white;
+}
+
+body .footer .content .contact .creadores .chris {
+    flex: 0 0 50%; /* Ocupar el 50% del ancho del contenedor */
+    color: white;
+}
+
+body .footer .content .contact .creadores .enlaces a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: auto;
+    margin-bottom: 10px;
+    border: 2px solid whitesmoke;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+body .footer .content .contact .creadores .enlaces i {
+    color: whitesmoke;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+body .footer .content .contact .creadores .enlaces a:hover {
+    background-color: white;
+}
+
+body .footer .content .contact .creadores .enlaces a:hover i {
+    color: black;
+}
+  
+  @-webkit-keyframes bubble-size {
+    0%, 75% {
+      width: var(--size, 4rem);
+      height: var(--size, 4rem);
+    }
+    100% {
+      width: 0rem;
+      height: 0rem;
+    }
+  }
+  
+  @keyframes bubble-size {
+    0%, 75% {
+      width: var(--size, 4rem);
+      height: var(--size, 4rem);
+    }
+    100% {
+      width: 0rem;
+      height: 0rem;
+    }
+  }
+  @-webkit-keyframes bubble-move {
+    0% {
+      bottom: -4rem;
+    }
+    100% {
+      bottom: var(--distance, 10rem);
+    }
+  }
+  @keyframes bubble-move {
+    0% {
+      bottom: -4rem;
+    }
+    100% {
+      bottom: var(--distance, 10rem);
+    }
+  }
+
+/* Adaptable a Responsivo*/
+/* @media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    }
+
+    .registro {
+        margin-left: -10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sesion {
+        margin-top: 7px;
+    }
+
+    .hero-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .hero-inferior-imagen {
+        width: 200px;
+        height: 200px;
+    }
+
+    .seccion-nosotros h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .seccion-nosotros h2 {
+        font-size: 2.5rem;
+        padding-top: 20px;
+    }
+
+    .seccion-vision h2 {
+        padding-left: 20px;
+    }
+
+    .card {
+        font-size: 0.7rem;
+    }
+
+    .crd h2 {
+        font-size: 1.5rem;
+    }
+
+    .crd img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .seccion-materias h2 {
+        margin-left: 30px;
+    }
+
+    .proyecto img {
+        width: 275px;
+        height: 100px;
+        margin-bottom: 15px;
+    }
+
+    body .footer .content .contact .creadores .alejandro {
+        flex: 0 0 100%; /* Ocupar el 50% del ancho del contenedor */
+    /* }
+    
+    body .footer .content .contact .creadores .chris {
+        flex: 0 0 100%; 
+
+    }
+
+    .bub {
+        display: none;
+    }
+}  */
+
+@media screen and (max-width: 1024px) {
+    .footer {
+        min-height: 400px;
+    }
+}
+
+@media screen and (max-width: 1364px) {
+    .navbar {
+        padding: 20px;
+    }
+
+    img {
+        width: 40px;
+    }
+
+    .logo{
+        font-size: 25px;
+    }
+    
+    .nav-link{
+        font-size: 15px;
+    }
+
+    .items {
+        margin-left: 10px;
+    }
+
+    .registro {
+        margin-left: 17px;
+    }
+
+    .sesion {
+        margin-left: 16px;
+    }
+
+    .hero-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .hero-inferior-imagen {
+        width: 350px;
+        height: 350px;
+    }
+
+    .seccion-vision h2 {
+        font-size: 1.5rem;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .crd img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .proyecto img {
+        width: 300px;
+        height: 150px;
+        margin-bottom: 15px;
+    }
+
+    .bub {
+        display: none;
+    }
+}
